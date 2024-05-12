@@ -22,5 +22,5 @@ This project implements a responsive login page designed to provide a seamless a
 A video demonstration showcasing the features of the login page and providing instructions on how to run the project locally is included in the repository. Please refer to the `how to run code and it's features.mp4` file for the video demonstration.
 
 ## Deployed Link
-Here is the deployed link for the login page: [Login Page](https://jazzy-sundae-08b755.netlify.app/)
+Here is the deployed link for the login page: [Login Page](https://jazzy-sundae-08b755.netlify.app/){:target="_blank"}
 
