@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" role="main">
+    <div class="container">
+      <img src="images/Logo.png" class="logo" alt="Logo">  
+      <h4>{{ title }}</h4>  <!--Accessible Rich Internet Applications -->
+      <form @submit.prevent="submitForm" aria-labelledby="login-heading">
+        <div class="email">
+          <label for="usernameEmail" class="form-label">Email</label>
+          <input v-model="usernameEmail" type="email" id="usernameEmail" required placeholder="Enter your email address" aria-required="true" aria-describedby="wrong email">
+          <div v-if="!isValidEmail" id="email-error" class="error-message">Please enter a valid email address</div>
+          
+          <label for="password" class="form-label">Password</label>
+          <input v-model="password" :type="isPasswordVisible ? 'text' : 'password'" id="password" required placeholder="Enter your password" aria-required="true">
+          <i v-on:click="togglePassword" class="far fa-eye password-icon"></i>
+          
+          <div @click="forgotPassword" class="Forgot-password">
+            <p>Forgot password?</p>
+          </div>
+        </div>
+        <div class="keep-me-signed-in">
+          <label>
+            <input type="checkbox" v-model="rememberMe">
+            Keep me signed in for 30 days
+          </label>
+        </div>
+        <button type="submit">SIGN IN</button>
+      </form>
+      <p @click="showTermsAlert" cursor="pointer">
+        Read our Terms of Service
+        <i class="fas fa-external-link-alt external-link-icon"></i>
+      </p>
+      <div class="color-bar"></div>
+      <div class="platforms">
+        <img src="images/Platforms.png" alt="Platforms that use Indee">
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

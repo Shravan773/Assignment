@@ -1,0 +1,172 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("images/Netflix Movie Tile Background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h4 {
+  padding-top: 0;
+}
+
+.container {
+  position: relative;
+  background-color: #0a0a0a;
+  padding: 30px;
+  border: 3px solid var(--Elements-Tamara-Black, rgba(24, 24, 24, 1));
+  max-width: 408px;
+  width: 300px;
+  height: 530px;
+  color: #fff;
+}
+
+.logo {
+  margin-bottom: 5px;
+  width: 170px;
+  height: auto;
+  padding-left: 70px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(44, 44, 46, 1)  ;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: white;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="text"]::placeholder {
+  color: rgba(188, 188, 188, 1);
+}
+.email label,
+.password label {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 32.69px;
+  text-align: left;
+  color: rgba(26, 104, 255, 1);
+}
+
+.password-icon {
+  position: absolute;
+  right: 40px;
+  top: 44%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgba(142, 142, 147, 1);
+}
+
+.keep-me-signed-in {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.keep-me-signed-in input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  position: relative;
+}
+
+.keep-me-signed-in input[type="checkbox"]::before {
+  content: '\2713';
+  font-size: 10px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.keep-me-signed-in input[type="checkbox"]:checked::before {
+  opacity: 1;
+}
+
+.keep-me-signed-in label,
+p {
+  color: rgba(188, 188, 188, 1);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  text-align: left;
+}
+.form-group {
+  margin-bottom: 25px;
+}
+
+
+.Forgot-password p {
+  color: rgba(188, 188, 188, 1);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.container button {
+  background-color: rgba(26, 104, 255, 1);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  width: 100%;
+  transition: background-color 0.3s ease; 
+}
+
+.container button:hover {
+  background-color: rgba(16,90, 250, 0.7); 
+}
+
+
+.external-link-icon {
+  color: rgba(142, 142, 147, 1);
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.color-bar {
+  height: 35px;
+  background-color: rgba(45, 49, 55, 1);
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.platforms {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.platforms img {
+  width: 100%;
+  height: auto;
+}
+
+/* For screens smaller than 600px */
+
